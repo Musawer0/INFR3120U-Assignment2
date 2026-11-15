@@ -1,6 +1,38 @@
-<%- include('partials/header')%>
+<%- include('partials/header') %>
 
-<h1>About Me</h1>
-<p>I am a Networking and IT Security student at Ontario Tech University.</p>
+<main class="container my-5 flex-grow-1">
+  <div class="custom-card p-4 p-md-5 rounded-3">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="/images/profile.jpg" alt="Musawer Beissed profile photo" class="img-fluid rounded-circle profile-img mb-3">
+        <h4 class="mb-1">Musawer Beissed</h4>
+        <p class="text-accent small mb-0">Networking &amp; IT Security Student</p>
+      </div>
+      <div class="col-md-8">
+        <h2 class="fw-bold mb-3"><i class="fas fa-user-shield text-accent me-2"></i>About Me</h2>
+        <p>
+          I am a 3rd-year Bachelor of Information Technology (Honours) student at Ontario Tech University specializing in Networking and IT Security. I hold Cisco Networking Academy certifications in Enterprise Networking, Security, and Automation (ENSA) as well as Introduction to Networks (ITN).
+        </p>
+        <p>
+          With over 150 hours of hands-on physical Cisco router and switch configurations in the university enterprise laboratory, my work focuses on building resilient wide-area networks, IPsec encrypted tunnels, and automated administration scripts.
+        </p>
+        <div class="row mt-4 g-3">
+          <div class="col-sm-6">
+            <div class="inner-box p-3 rounded">
+              <h6 class="text-accent mb-1"><i class="fas fa-certificate me-2"></i>Certifications</h6>
+              <p class="small mb-0">Cisco NetAcad: ENSA &amp; ITN</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="inner-box p-3 rounded">
+              <h6 class="text-accent mb-1"><i class="fas fa-location-dot me-2"></i>Location</h6>
+              <p class="small mb-0">Oshawa, Ontario, Canada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 <%- include('partials/footer') %>

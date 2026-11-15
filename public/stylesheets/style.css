@@ -1,8 +1,88 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body {   /* dark theme colors */
+  background-color: #0e131f;
+  color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.custom-navbar {
+  background-color: #121926;
+  border-bottom: 2px solid #00adb5;
+}
+
+.text-accent {
+  color: #00adb5 !important;
+}
+
+.text-muted-custom {
+  color: #a8b4c4;
+}
+
+.badge-accent {
+  background-color: rgba(0, 173, 181, 0.15);
+  color: #00adb5;
+  border: 1px solid #00adb5;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #1a2232 0%, #121926 100%);
+  border: 1px solid #2b3952;
+}
+
+.custom-card {
+  background-color: #1a2232;
+  border: 1px solid #2b3952;
+}
+
+.inner-box {
+  background-color: #121926;
+  border: 1px solid #2b3952;
+}
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border: 3px solid #00adb5;
+}
+
+.btn-accent {
+  background-color: #00adb5;
+  color: #0e131f;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #008c93;
+  color: #ffffff;
+}
+
+.custom-input {
+  background-color: #121926;
+  border: 1px solid #6b7a8f;
+  color: #f4f6f9;
+}
+
+.custom-input:focus {
+  background-color: #121926;
+  border-color: #00adb5;
+  color: #f4f6f9;
+  box-shadow: 0 0 0 0.2rem rgba(0, 173, 181, 0.25);
+}
+
+.site-footer {
+  background-color: #121926;
+  border-top: 1px solid #2b3952;
+}
+
+.site-footer a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }

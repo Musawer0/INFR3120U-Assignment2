@@ -1,6 +1,67 @@
 <%- include('partials/header') %>
 
-<h1>My Projects</h1>
-<p>Networking, cloud security, and scripting lab projects coming soon.</p>
+<main class="container my-5 flex-grow-1">
+  <div class="mb-4">
+    <h2 class="fw-bold"><i class="fas fa-laptop-code text-accent me-2"></i>Academic &amp; Technical Projects</h2>
+    <p class="text-muted-custom">Selected networking, cloud infrastructure, and automation labs completed at Ontario Tech University.</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Project 1 -->
+    <div class="col-md-6">
+      <div class="custom-card p-4 rounded-3 h-100">
+        <span class="badge badge-accent mb-2">INFR 2421U</span>
+        <h4>1. Multi-Region Enterprise MPLS WAN &amp; Phase 3 DMVPN</h4>
+        <p class="text-muted-custom mb-0">
+          Interconnected multi-region campus sites across Toronto, Ottawa, and Oshawa using physical Cisco ISR 4331 enterprise routers and Catalyst switches. Deployed an MPLS core WAN via LDP and engineered a redundant Phase 3 DMVPN backup with IPsec AES-256 encryption.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-6">
+      <div class="custom-card p-4 rounded-3 h-100">
+        <span class="badge badge-accent mb-2">INFR 2411U</span>
+        <h4>2. Enterprise Campus Routing &amp; Virtualized Network</h4>
+        <p class="text-muted-custom mb-0">
+          Designed a multi-tier network topology connecting North Oshawa and Downtown Oshawa campus environments over an ISP backbone. Established eBGP and iBGP peering alongside multi-area OSPF, implementing VRF-Lite to isolate internet traffic from private networks.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-6">
+      <div class="custom-card p-4 rounded-3 h-100">
+        <span class="badge badge-accent mb-2">Cloud Automation</span>
+        <h4>3. Automated E-Commerce Order Parsing &amp; Anomaly Monitor</h4>
+        <p class="text-muted-custom mb-0">
+          Built automation scripts in Python to parse incoming order event payloads, programmatically identifying fulfillment exceptions and payment delays. Deployed automated monitoring routines on a remote Linux Cloud VPS using scheduled cron jobs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="col-md-6">
+      <div class="custom-card p-4 rounded-3 h-100">
+        <span class="badge badge-accent mb-2">Systems Security</span>
+        <h4>4. Linux Cloud VPS Server Hardening &amp; Secret Management</h4>
+        <p class="text-muted-custom mb-0">
+          Hardened remote Linux cloud host environments by migrating sensitive application API tokens into access-controlled environment files. Configured POSIX permissions, stateful firewall rules, and sanitized logs to protect sensitive operational data.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="col-12">
+      <div class="custom-card p-4 rounded-3">
+        <span class="badge badge-accent mb-2">Network Scripting</span>
+        <h4>5. Automated Enterprise Network Diagnostics &amp; TCL Verification</h4>
+        <p class="text-muted-custom mb-0">
+          Configured automated TCL diagnostic scripts on Cisco enterprise hardware to verify dynamic routing convergence and failover behaviors. Validated link failover across redundant WAN interfaces and monitored packet behavior using Wireshark captures.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
 
 <%- include('partials/footer') %>

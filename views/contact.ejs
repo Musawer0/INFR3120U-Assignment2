@@ -1,11 +1,38 @@
 <%- include('partials/header') %>
 
-<h1>Contact Me</h1>
-<form>
-  <input type="text" placeholder="Your Name"><br><br>
-  <input type="email" placeholder="Your Email"><br><br>
-  <textarea placeholder="Message"></textarea><br><br>
-  <button type="submit">Send</button>
-</form>
+<main class="container my-5 flex-grow-1">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="custom-card p-4 p-md-5 rounded-3">
+        <h2 class="fw-bold mb-2"><i class="fas fa-envelope-open-text text-accent me-2"></i>Contact Me</h2>
+        <p class="text-muted-custom mb-4">Have a question about my networking labs or want to connect? Fill out the form below.</p>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control custom-input" id="fullName" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" class="form-control custom-input" id="emailAddress" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number (Optional)</label>
+            <input type="tel" class="form-control custom-input" id="phoneNumber" placeholder="905-555-0199">
+          </div>
+          <div class="mb-3">
+            <label for="messageBox" class="form-label">Message</label>
+            <textarea class="form-control custom-input" id="messageBox" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">
+            <i class="fas fa-paper-plane me-1"></i> Send Message
+          </button>
+          <button type="reset" class="btn btn-outline-secondary ms-2">Clear</button>
+        </form>
+        <!-- Feedback message container controlled by script.js -->
+        <div id="formFeedback" class="alert alert-success mt-4 d-none" role="alert"></div>
+      </div>
+    </div>
+  </div>
+</main>
 
 <%- include('partials/footer') %>
